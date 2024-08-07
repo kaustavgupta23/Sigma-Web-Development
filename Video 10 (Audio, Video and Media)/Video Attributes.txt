@@ -1,0 +1,7 @@
+src: Specifies the path to the video file.
+controls: Adds video controls, like play, pause, and volume.
+autoplay: Automatically starts playing the video when the page loads.
+loop: Repeats the video once it ends.
+muted: Mutes the video by default.
+poster: thumbnail of a video.
+width and height: Specifies the dimensions of the video.

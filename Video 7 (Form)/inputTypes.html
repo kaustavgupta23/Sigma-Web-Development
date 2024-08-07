@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>From to apply for Web Development Course</h1>
+    <form action="post">
+        <!-- text input for username -->
+         <div>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        
+        <!-- text input for password -->
+            <label for="password">Enter password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        
+        </div>
+
+        <div>
+            <!-- buttons for gender -->
+            <label>Gender: </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- CHECKBOX -->
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+
+        <!-- RANGE -->
+        <div>
+            <input type="range" id="range" name="range">
+            <label for="range">Select range</label>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <input type="button" id="button" name="button">
+            <label for="button">Button</label>
+        </div>
+        <br>
+
+        <!-- COLOR -->
+        <div>
+            <input type="color" id="color" name="color">
+            <label for="color">color</label>
+        </div>
+        <br>
+
+        <!-- DATE -->
+        <div>
+            <input type="datetime-local" id="date" name="date">
+            <label for="date">Select Date and Time</label>
+        </div>
+        <br>
+
+        <!-- TEXT AREA -->
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea  id="comment" name="comment" rows="5" cols="100"></textarea>
+        </div>
+        <br>
+
+        <!-- email -->
+        <div>
+            <label for="email">Enter your email id: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email id">
+        </div>
+        <br>
+
+        <!-- file -->
+        <div>
+            <label for="file">Select files</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <br>
+
+         <!-- search -->
+        <div>
+          <label for="search">Search here: </label>
+          <input type="search" id="search" name="search">
+        </div>
+        <br>
+
+        <!-- telephone -->
+        <div>
+            <label for="telephone">Enter your phone number: </label>
+            <input type="tel" id="telephone" name="telephone">
+        </div>
+        <br>
+
+        <!-- URL -->
+        <div>
+            <label for="website">Enter URL:</label>
+            <input type="url" id="website" name="website" placeholder="https://www.example.com" required>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</body>
+</html>

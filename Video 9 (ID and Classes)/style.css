@@ -1,0 +1,12 @@
+.red{
+    background-color: rgb(64, 113, 237);
+    color: white
+}
+
+#div1{
+    border: 4px solid black;
+}
+
+#div2{
+    border: 4px dotted red
+}
