@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:wght@300;400;500;600&display=swap');
+        *{
+            text-align: center;
+            padding: 5px;
+        }
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: red;
+            font-style: italic;
+            font-weight: lighter;
+            text-indent: 45px;
+            
+           
+        }
+
+        h2{
+            color: cornflowerblue;
+            text-indent: 45px;
+            background-color: bisque;
+            text-decoration: underline;
+            text-decoration-color: rgb(219, 54, 164);
+            text-decoration-line: underline;
+            text-decoration-thickness: 2px;
+            font-size: 50px;
+            text-overflow: ellipsis;
+
+        }
+
+        p{
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Baloo Bhai 2", sans-serif;
+            /* font-size: 5px; */
+            background-color: skyblue;
+            /* color: white; */
+            font-weight: bolder;
+            /* line-height: 5; */
+            text-transform: capitalize;
+            /* text-decoration: underline; */
+            text-decoration-color: brown;
+            text-decoration-style: solid;
+            text-decoration-thickness: 5px;
+        }
+        .lorem2{
+            border: 5px solid black;
+            /* width: 45px;
+            text-overflow: clip;
+            overflow: hidden; */
+
+            width: 145px;
+            word-break:keep-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fonts</h1>
+    <h2>About fonts</h2>
+    <p>these are some fonts</p>
+    <p class="lorem2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores distinctio et iusto. Architecto asperiores delectus facilis adipisci incidunt eos nam, praesentium nesciunt nemo sapiente amet. Consectetur perferendis incidunt delectus tempore.</p>
+</body>
+</html>

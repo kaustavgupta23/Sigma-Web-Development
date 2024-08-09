@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      div {
+        background-color: aqua;
+        color: blueviolet;
+      }
+
+      /* CHILD SELECTOR - immediate p jo hoga bs ussi pe */
+      div > p {
+        background-color: red;
+      }
+
+      /* DESCENDANT SELECTOR - div ke andar kahi bhi p ho, color change ho jayega */
+      div p {
+        background-color: brown;
+      }
+
+      /* UNIVERSAL SELECTOR  */
+      *{
+        margin: 0;
+      }
+
+      /* PSEUDO SELECTOR */
+
+      /* when link is visted */
+      a:visited{
+        color: darkorange;
+      }
+
+      /* when the link is not visted */
+      a:link{
+        color: chartreuse;
+      }
+
+      /* hovering on link */
+      a:hover{
+        background-color: darkred;
+      }
+
+      /* Child node */
+      p:first-child{
+        background-color: darkblue;
+      }
+      p:first-child
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <main class="one">
+        <p>First</p>
+        <p>Second</p>
+    </main>
+    <div>
+      <h1>Hi i am Kaustav Gupta</h1>
+      <article>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+          architecto eius qui porro ex ab! Est quia eligendi, beatae molestiae
+          quos maiores dolorem sapiente, eum fugit rem error nostrum dolorum.
+        </p>
+      </article>
+    </div>
+
+    <a href="https://www.google.com/" target="_blank">Go to Google</a>
+    <a href="https://www.facebook23.com/" target="_blank">Go to facebook</a>
+
+  </body>
+</html>
