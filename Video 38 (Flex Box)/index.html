@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+
+    .container{
+        background-color: beige;
+        border: 5px solid black;
+        display: flex;
+        margin: 2px;
+        padding: 2px;
+        flex-direction: row;
+        height: 800px;
+        align-items: start;
+        /* justify-content: center;  */
+        /* flex-wrap:wrap ; */
+    }
+    .box{
+        /* height: 200px;
+        width: 200px; */
+        border: 2px solid red;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    #box1{
+        background-color: aqua;
+        order: 100;
+        /* flex-shrink: 4;
+        flex-grow: 1; */
+        align-self: center;
+    }
+    #box2{
+        background-color: blue;
+        /* flex-grow: 1; */
+        align-self: stretch;
+    }
+    #box3{
+        background-color: orange;
+        order: 2;
+        /* flex-grow: 1; */
+        align-self: flex-end;
+    }
+    #box4{
+        background-color: brown;
+        order: -1;
+        /* flex-grow: 5; */
+        /* flex-basis: auto; HELP IN SETTING WIDTH */
+        align-self: self-start;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Flex Item 1</div>
+        <div class="box" id="box2">Flex Item 2</div>
+        <div class="box" id="box3">Flex Item 3</div>
+        <div class="box" id="box4">Flex Item 4</div>
+    </div>
+</body>
+</html>
