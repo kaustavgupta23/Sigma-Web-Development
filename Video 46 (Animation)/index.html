@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      /* Define a CSS animation named 'example' */
+      @keyframes example {
+        /* At 0% (start of the animation), set the background color to aqua */
+        0% {
+          background-color: aqua;
+        }
+
+        /* At 25% of the animation duration, change the background color to yellow */
+        25% {
+          background-color: yellow;
+        }
+
+        /* At 50% of the animation duration, change the background color to red */
+        50% {
+          background-color: red;
+        }
+
+        /* At 75% of the animation duration, change the background color to black */
+        75% {
+          background-color: black;
+        }
+
+        /* At 100% (end of the animation), set the background color to blue */
+        100% {
+          background-color: blue;
+        }
+      }
+
+      /* Style the div element */
+      div {
+        /* Set the width of the div to 500px */
+        width: 500px;
+
+        /* Set the height of the div to 500px */
+        height: 500px;
+
+        /* Commented out: This would set the initial background color to red */
+        /* background-color: red; */
+
+        /* Apply the 'example' animation to the div */
+        animation-name: example;
+
+        /* Set the duration of the animation to 25 seconds */
+        animation-duration: 25s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="examples"></div>
+  </body>
+</html>

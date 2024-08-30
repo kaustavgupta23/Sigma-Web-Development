@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Style the container class */
+      .container {
+        /* Set the background color of the container to beige */
+        background-color: beige;
+
+        /* Add a 5px solid black border around the container */
+        border: 5px solid black;
+
+        /* Add 2px of margin outside the container */
+        margin: 2px;
+
+        /* Add 2px of padding inside the container */
+        padding: 2px;
+
+        /* Use flexbox layout for the container */
+        display: flex;
+      }
+
+      /* Style the box class */
+      .box {
+        /* Set the height of each box to 200px */
+        height: 200px;
+
+        /* Set the width of each box to 200px */
+        width: 200px;
+
+        /* Add a 2px solid red border around each box */
+        border: 2px solid red;
+
+        /* Add 2px of margin outside each box */
+        margin: 2px;
+
+        /* Add 2px of padding inside each box */
+        padding: 2px;
+      }
+
+      /* Style the element with id 'box1' */
+      #box1 {
+        /* Set the background color of the first box to aqua */
+        background-color: aqua;
+      }
+
+      /* Style the element with id 'box2' */
+      #box2 {
+        /* Set the background color of the second box to blue */
+        background-color: blue;
+      }
+
+      /* Style the element with id 'box3' */
+      #box3 {
+        /* Set the background color of the third box to orange */
+        background-color: orange;
+      }
+
+      /* Style the element with id 'box4' */
+      #box4 {
+        /* Set the background color of the fourth box to brown */
+        background-color: brown;
+      }
+
+      /* Define styles for screens with a minimum width of 640px */
+      @media (min-width: 640px) {
+        .container {
+          /* On larger screens, arrange child elements in a row */
+          flex-direction: row;
+        }
+      }
+
+      /* Define styles for screens with a maximum width of 640px */
+      @media (max-width: 640px) {
+        .container {
+          /* On smaller screens, arrange child elements in a column */
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Flex Item 1</div>
+      <div class="box" id="box2">Flex Item 2</div>
+      <div class="box" id="box3">Flex Item 3</div>
+      <div class="box" id="box4">Flex Item 4</div>
+    </div>
+  </body>
+</html>

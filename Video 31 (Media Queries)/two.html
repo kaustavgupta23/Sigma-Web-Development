@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query 2</title>
+    \
+    <style>
+      /* Style the container class */
+      .container {
+        /* Add a 1px solid black border around the container */
+        border: 1px solid black;
+
+        /* Set the background color of the container to bisque */
+        background-color: bisque;
+
+        /* Use flexbox layout for the container */
+        display: flex;
+
+        /* Arrange child elements in a row by default */
+        flex-direction: row;
+
+        /* Set the width of the container to 450px */
+        width: 450px;
+
+        /* Add 2px of padding inside the container */
+        padding: 2px;
+
+        /* Add 10px of margin outside the container */
+        margin: 10px;
+      }
+
+      /* Style the element with id 'boxleft' */
+      #boxleft {
+        /* Set the background color of the left box to aquamarine */
+        background-color: aquamarine;
+
+        /* Add a 1px solid blue border around the left box */
+        border: 1px solid blue;
+
+        /* Set the width of the left box to 47% of the container */
+        width: 47%;
+
+        /* Add 2px of padding inside the left box */
+        padding: 2px;
+
+        /* Add 3px of margin outside the left box */
+        margin: 3px;
+
+        /* Use flexbox layout for the left box */
+        display: flex;
+
+        /* Arrange child elements in a column within the left box */
+        flex-direction: column;
+      }
+
+      /* Style the element with id 'boxright' */
+      #boxright {
+        /* Set the background color of the right box to yellow */
+        background-color: yellow;
+
+        /* Add a 1px solid brown border around the right box */
+        border: 1px solid brown;
+
+        /* Set the width of the right box to 47% of the container */
+        width: 47%;
+
+        /* Add 2px of padding inside the right box */
+        padding: 2px;
+
+        /* Add 3px of margin outside the right box */
+        margin: 3px;
+      }
+
+      /* Style all paragraph elements */
+      p {
+        /* Add a 1px solid red border around each paragraph */
+        border: 1px solid red;
+      }
+
+      /* Style all image elements */
+      img {
+        /* Set the width of all images to 170px */
+        width: 170px;
+      }
+
+      /* Define styles for screens with a maximum width of 640px */
+      @media (max-width: 640px) {
+        .container {
+          /* On smaller screens, arrange child elements in a column */
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="boxleft">
+        <p>Text 1</p>
+        <p>Text 2</p>
+      </div>
+
+      <div id="boxright">
+        <img src="download.jpeg" />
+      </div>
+    </div>
+  </body>
+</html>

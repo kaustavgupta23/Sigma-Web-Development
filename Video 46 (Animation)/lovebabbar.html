@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babbar Animation</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: beige;
+        border: 5px solid black;
+      }
+
+      .box {
+        width: 350px;
+        height: 80px;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        animation-name: rightMovement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+
+        /* animation-timing-function: linear; */
+        /* animation-timing-function: ease-in-out; */
+      }
+
+      /* Styles for box1 */
+      #box1 {
+        /* Set the background color to blue */
+        background-color: blue;
+
+        /* Add a 3px solid red border */
+        border: 3px solid red;
+
+        /* Set the animation timing function using a custom cubic-bezier curve */
+        animation-timing-function: cubic-bezier(1, -1, 1, 1);
+
+        /* Set the animation direction to normal */
+        animation-direction: normal;
+      }
+
+      /* Styles for box2 */
+      #box2 {
+        /* Set the background color to red */
+        background-color: red;
+
+        /* Use the default ease timing function for animations */
+        animation-timing-function: ease;
+
+        /* Set the animation direction to reverse */
+        animation-direction: reverse;
+      }
+
+      /* Styles for box3 */
+      #box3 {
+        /* Set the background color to black */
+        background-color: black;
+
+        /* Use the ease-in timing function for smoother acceleration */
+        animation-timing-function: ease-in;
+
+        /* Set the animation direction to alternate (reverses on each iteration) */
+        animation-direction: alternate;
+      }
+
+      /* Styles for box4 */
+      #box4 {
+        /* Set the background color to yellow */
+        background-color: yellow;
+
+        /* Use the ease-out timing function for a smoother deceleration */
+        animation-timing-function: ease-out;
+
+        /* Set the animation direction to alternate-reverse (reverses direction on each iteration) */
+        animation-direction: alternate-reverse;
+      }
+
+      /* Styles for box5 */
+      #box5 {
+        /* Set the background color to dark blue */
+        background-color: darkblue;
+
+        /* Use the ease-in-out timing function for both smooth acceleration and deceleration */
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes rightMovement {
+        from {
+          top: 0px;
+          left: 1px;
+        }
+
+        to {
+          top: 0px;
+          left: 1000px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+      <div class="box" id="box5"></div>
+    </div>
+  </body>
+</html>
