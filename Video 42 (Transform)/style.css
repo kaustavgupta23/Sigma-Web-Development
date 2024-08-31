@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Hide the scrollbar */
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure the content doesn’t overflow */
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    transition: all 5s linear 1s;
+}
+
+.box:hover {
+    background-color: red;
+    /* transform: scale(1.5) skew(-20deg); */
+    /* transform: scale(2) ; */
+
+    /* transform: translate(400px, -200px); */
+
+    /* It combines several transforms like scale, rotate, skew, and translate in one. */
+    transform: matrix(1, 0.5, -0.5, 1, 50, 100); /* Custom transformation using matrix */
+
+}
+
+p {
+    font-size: 36px;
+}

@@ -1,0 +1,76 @@
+
+CSS Transform Properties Guide
+
+In CSS, the transform property allows you to apply various transformations to elements. Here are the key transform functions you can use:
+
+1. Translate
+   - translate(x, y): Moves the element along the X-axis (horizontal) and Y-axis (vertical).
+     Example: transform: translate(50px, 100px); // Moves 50px to the right and 100px down
+
+   - translateX(x): Moves the element along the X-axis only.
+     Example: transform: translateX(50px); // Moves 50px to the right
+
+   - translateY(y): Moves the element along the Y-axis only.
+     Example: transform: translateY(100px); // Moves 100px down
+
+   - translateZ(z): Moves the element along the Z-axis (used in 3D transforms).
+     Example: transform: translateZ(20px); // Moves 20px forward in the 3D space
+
+   - translate3d(x, y, z): Moves the element in 3D space.
+     Example: transform: translate3d(50px, 100px, 20px);
+
+2. Scale
+   - scale(x, y): Resizes the element in both X and Y directions.
+     Example: transform: scale(1.5, 2); // Scales 1.5 times in width, 2 times in height
+
+   - scaleX(x): Resizes the element along the X-axis only.
+     Example: transform: scaleX(1.5); // Scales 1.5 times in width
+
+   - scaleY(y): Resizes the element along the Y-axis only.
+     Example: transform: scaleY(2); // Scales 2 times in height
+
+   - scaleZ(z): Scales the element along the Z-axis (used in 3D transforms).
+     Example: transform: scaleZ(1.2); // Scales 1.2 times in the Z-axis
+
+   - scale3d(x, y, z): Scales the element in 3D space.
+     Example: transform: scale3d(1.5, 2, 1.2);
+
+3. Rotate
+   - rotate(angle): Rotates the element around its origin by a specified angle.
+     Example: transform: rotate(45deg); // Rotates the element 45 degrees
+
+   - rotateX(angle): Rotates the element around the X-axis (3D rotation).
+     Example: transform: rotateX(45deg); // Rotates 45 degrees around the X-axis
+
+   - rotateY(angle): Rotates the element around the Y-axis (3D rotation).
+     Example: transform: rotateY(45deg); // Rotates 45 degrees around the Y-axis
+
+   - rotateZ(angle): Rotates the element around the Z-axis (equivalent to rotate in 2D).
+     Example: transform: rotateZ(45deg); // Rotates 45 degrees around the Z-axis
+
+   - rotate3d(x, y, z, angle): Rotates the element around a vector defined by the (x, y, z) values.
+     Example: transform: rotate3d(1, 1, 0, 45deg); // Rotates around the vector (1,1,0) by 45 degrees
+
+4. Skew
+   - skew(x-angle, y-angle): Skews the element by the specified angles along the X and Y axes.
+     Example: transform: skew(20deg, 10deg); // Skews 20 degrees along the X-axis and 10 degrees along the Y-axis
+
+   - skewX(angle): Skews the element along the X-axis only.
+     Example: transform: skewX(20deg); // Skews 20 degrees along the X-axis
+
+   - skewY(angle): Skews the element along the Y-axis only.
+     Example: transform: skewY(10deg); // Skews 10 degrees along the Y-axis
+
+5. Perspective
+   - perspective(n): Defines the perspective from which you view the 3D transformed element.
+     Example: transform: perspective(500px);
+
+   - The perspective is typically set on the parent container using perspective property, not directly within the transform property:
+     Example: div { perspective: 500px; }
+
+6. Matrix
+   - matrix(a, b, c, d, e, f): Applies a 2D transformation using a matrix of six values. It combines several transforms like scale, rotate, skew, and translate in one.
+     Example: transform: matrix(1, 0.5, -0.5, 1, 50, 100); // Custom transformation using matrix
+
+   - matrix3d(n1, n2, ..., n16): Applies a 3D transformation using a matrix of 16 values.
+     Example: transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 100, 0, 1);
