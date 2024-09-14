@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 5</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: #A02334;
+            display: grid;
+            padding: 2rem;
+            gap: 0.5rem;
+            grid-template-columns: repeat(6, 0.5fr);
+        }
+
+        .item{
+            background-color: #FFAD60;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .colorOne{
+            background-color: #FFEEAD;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item 1 colorOne">1</div>
+        <div class="item 2 colorTwo">2</div>
+        <div class="item 3 colorOne">3</div>
+        <div class="item 4 colorTwo">4</div>
+        <div class="item 5 colorOne">5</div>
+        <div class="item 6 colorTwo">6</div>
+        <div class="item 7 colorTwo">7</div>
+        <div class="item 8 colorOne">8</div>
+        <div class="item 9 colorTwo">9</div>
+        <div class="item 10 colorOne">10</div>
+        <div class="item 11 colorTwo">11</div>
+        <div class="item 12 colorOne">12</div>
+        <div class="item 13 colorOne">13</div>
+        <div class="item 14 colorTwo">14</div>
+        <div class="item 15 colorOne">15</div>
+        <div class="item 16 colorTwo">16</div>
+        <div class="item 17 colorOne">17</div>
+        <div class="item 18 colorTwo">18</div>
+    </div>
+
+</body>
+</html>

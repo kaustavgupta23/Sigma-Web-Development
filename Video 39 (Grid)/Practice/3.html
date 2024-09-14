@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: #ff9a3c;
+            padding: 1.5rem;
+            gap: 1rem;
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "sidebar content content"
+                "sidebar content content"
+                "footer footer footer"
+            ;
+
+        }
+
+        .item{
+            background-color: #155263;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+
+        #header{
+            grid-area: header;
+        }
+
+        #sidebar{
+            grid-area: sidebar;
+        }
+
+        #content{
+            grid-area: content;
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="header">HEADER</div>
+        <div class="item" id="sidebar">SIDEBAR</div>
+        <div class="item" id="content">CONTENT</div>
+        <div class="item" id="footer">FOOTER</div>
+    </div>
+</body>
+</html>
