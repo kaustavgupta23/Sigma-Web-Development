@@ -892,7 +892,7 @@ ul{
   padding-bottom: 2rem;
   margin-top: 2rem;
   padding-top: 1.15rem;
-  border-top: 1px solid #E5E7EB;
+  border-top: 1px solid var(--gray);
 }
 
 @media screen and (max-width:1080px) {
